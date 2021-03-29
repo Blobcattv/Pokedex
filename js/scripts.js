@@ -15,3 +15,5 @@ let pokemonList = [
         type: "water"
     }
 ];
+
+document.write(pokemonList.map((poke) => poke.name));
