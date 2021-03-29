@@ -7,13 +7,15 @@ let pokemonList = [
     {
         name: "Snorlax",
         height: 2.1,
-        type: "normal"
+        type: ["normal"]
     },
     {
         name: "Psyduck",
         height: 0.8,
-        type: "water"
+        type: ["water"]
     }
 ];
 
-document.write(pokemonList.map((poke) => poke.name));
+pokemonList.forEach((pokemon) => {
+    document.writeln(`${pokemon.name} is ${pokemon.height} meters high. And is of type ${pokemon.type}.`);
+});
