@@ -21,14 +21,13 @@ let pokemonList = [
     }
 ];
 
-for (let i = 0; i < pokemonList.length; i++) {
-    const pkm = pokemonList[i];
-    let output = `${pkm.name} is ${pkm.height} meters high.`
-    if (pkm.height > 1.0) {
+pokemonList.forEach(function(pokemon) {
+    let output = pokemon.name + ` is ` + pokemon.height + ` meters high.`;
+    if (pokemon.height > 1.0) {
         output = output + " - Wow! Thats huge.";
     }
-    if (pkm.height < 0.3) {
+    if (pokemon.height < 0.3) {
         output = output + " - So tiny!";
     }
     document.write(output + "<br>");
-}
+});
