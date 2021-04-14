@@ -1,0 +1,107 @@
+html, body {
+    font-family: Roboto;
+    background-image: url("../img/background.png");
+}
+
+h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+#modal-container {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* to show it above other content */
+    z-index: 999;
+    /* to allow scrolling if the screen is not high enough*/
+    overflow: auto;
+    /* this is used to center the modal */
+    display: grid;
+    text-align: center;
+}
+
+.pkm-modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.pkm-modal-close {
+    float: right;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #777;
+    text-decoration: underline;
+}
+
+.pkm-modal h1 {
+    margin-top: 0;
+}
+
+.pkm-modal p {
+    margin-bottom: 0;
+}
+
+#modal-container {
+    display: none;
+}
+
+#modal-container.is-visible {
+    /* CSS for modal container - add your own desired CSS styles here */
+    display: block;
+}
+
+.pkm-btn {
+    position: relative;
+    width: 33%;
+    padding: 2px 0px;
+    margin: 6px;
+    border-radius: 100pt;
+    color: white;
+    text-transform: capitalize;
+    font-size: 14pt;
+    border: none;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+    
+}
+
+.pkm-btn:hover {
+    opacity: 0.9;
+
+}
+
+.pkm-btn img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    image-rendering: pixelated;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 100pt;
+}
+
+.pokemon-list {
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media all and (max-width: 1000px) {
+    .pkm-btn {
+        width: 100%;
+    }
+}
