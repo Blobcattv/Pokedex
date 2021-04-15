@@ -65,16 +65,14 @@ h1 {
 }
 
 .pkm-btn {
-    position: relative;
-    width: 33%;
-    padding: 2px 0px;
-    margin: 6px;
-    border-radius: 100pt;
+    width: 30%;
+    padding: 15px 0px;
+    margin: 10px;
+    border-radius: 18pt;
     color: white;
     text-transform: capitalize;
     font-size: 14pt;
     border: none;
-    height: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: all .2s ease-in-out;
     
@@ -86,10 +84,6 @@ h1 {
 }
 
 .pkm-btn img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100px;
     image-rendering: pixelated;
     background-color: rgba(255, 255, 255, 0.226);
     border-radius: 100pt;

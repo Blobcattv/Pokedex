@@ -19,9 +19,11 @@ let pokemonRepository = (function () {
 
     function addListItem(pkm) {
         let mainList = document.querySelector('.pokemon-list');
-        let button = document.createElement('button');
-        button.innerText = pkm.name;
+        let button = document.createElement('div');
         button.classList.add('pkm-btn');
+
+        let buttonTitle = document.createElement('h3');
+        buttonTitle.innerText = pkm.name;
 
         loadDetails(pkm).then(function () {
             let typeName = pkm.types[0].type.name;
@@ -30,8 +32,10 @@ let pokemonRepository = (function () {
             button.style.backgroundColor = colorCode;
             let imgElement = document.createElement("img");
             imgElement.src = pkm.imageUrl;
-            button.appendChild(imgElement);
 
+            // Append
+            button.appendChild(buttonTitle);
+            button.appendChild(imgElement);            
             mainList.appendChild(button);
         });
 
