@@ -18,7 +18,6 @@ let pokemonRepository = (function () {
 
 
     function addListItem(pkm) {
-        console.log(pkm);
         let mainList = document.querySelector('.pokemon-list');
         let button = document.createElement('button');
         button.innerText = pkm.name;
@@ -185,7 +184,6 @@ pokemonRepository.loadList().then(function () {
         pokemonRepository.addListItem(pokemon);
     });
 }).then(function () {
-    console.log(pokemonList);
     let header = document.querySelector("#pokedex-header");
     header.innerText = header.innerText + " of " + pokemonList.length + " Pokémons ";
 });
