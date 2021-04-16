@@ -9,22 +9,20 @@ h1 {
 }
 
 .pkm-btn {
-    width: 30%;
+    width: 31.5%;
     padding: 15px 0px;
     margin: 10px;
-    border-radius: 18pt;
+    border-radius: 14pt;
     color: white;
     text-transform: capitalize;
     font-size: 14pt;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: all .2s ease-in-out;
-    
 }
 
 .pkm-btn:hover {
     opacity: 0.9;
-
 }
 
 .pkm-btn img {
@@ -33,8 +31,20 @@ h1 {
     border-radius: 100pt;
 }
 
-.pokemon-list {
+.pkm-btn p {
+    margin-left: 30px;
     text-align: center;
+    border-radius: 10pt;
+    padding: 0px 15pt;
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+
+.pkm-btn h3 {
+    margin: 15px 30px;
+}
+
+.pokemon-list {
     padding-top: 50px;
 }
 
@@ -42,4 +52,13 @@ h1 {
     .pkm-btn {
         width: 100%;
     }
+}
+
+.img-wrap {
+    float: right;
+    padding: 0px 34px;
+}
+
+.type-wrap {
+    float: left;
 }

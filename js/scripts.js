@@ -18,6 +18,7 @@ let pokemonRepository = (function () {
 
 
     function addListItem(pkm) {
+        console.log(pkm);
         let mainList = document.querySelector('.pokemon-list');
         let button = document.createElement('div');
         button.dataset.target = "#exampleModal";
@@ -26,18 +27,29 @@ let pokemonRepository = (function () {
 
         let buttonTitle = document.createElement('h3');
         buttonTitle.innerText = pkm.name;
+        button.appendChild(buttonTitle);
 
         loadDetails(pkm).then(function () {
             let typeName = pkm.types[0].type.name;
             let colorCode = calcColorByType(typeName);
+            let typeContainer = document.createElement("div");
+            typeContainer.classList.add("type-wrap");
+            button.appendChild(typeContainer);
 
+            for (let typeObj of pkm.types) {
+                let typeElement = document.createElement("p");
+                typeElement.innerText = typeObj.type.name;
+                typeContainer.appendChild(typeElement);
+            }
+
+            let imgContainer = document.createElement("div");
+            imgContainer.classList.add("img-wrap");
+            button.appendChild(imgContainer);
             button.style.backgroundColor = colorCode;
             let imgElement = document.createElement("img");
             imgElement.src = pkm.imageUrl;
+            imgContainer.appendChild(imgElement);
 
-            // Append
-            button.appendChild(buttonTitle);
-            button.appendChild(imgElement);
             mainList.appendChild(button);
         });
 
