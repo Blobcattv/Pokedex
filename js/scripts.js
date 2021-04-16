@@ -18,7 +18,6 @@ let pokemonRepository = (function () {
 
 
     function addListItem(pkm) {
-        console.log(pkm);
         let mainList = document.querySelector('.pokemon-list');
         let button = document.createElement('div');
         button.dataset.target = "#exampleModal";
@@ -104,18 +103,19 @@ let pokemonRepository = (function () {
 
     let modalContainer = document.querySelector('#exampleModal');
     $("#exampleModal").on("hidden.bs.modal", function (e) {
-        console.log("callback");
         hideModal();
     });
 
     function showModal(pokemon) {
         let modal = document.querySelector('.modal-content');
         let typeName = pokemon.types[0].type.name;
-        modal.style.backgroundColor = calcColorByType(typeName);
 
         // Pokemon Name
         let modalTitle = document.querySelector('.modal-title');
         modalTitle.innerText = pokemon.name;
+
+        let modalHeader = document.querySelector('.modal-header');
+        modalHeader.style.backgroundColor = calcColorByType(typeName);
 
         // Pokemon Image
         let modalBody = document.querySelector('.modal-body');
@@ -132,7 +132,6 @@ let pokemonRepository = (function () {
     }
 
     function hideModal() {
-        console.log("hideModal");
         let titleElement = $(".modal-title");
         titleElement.empty();
 
