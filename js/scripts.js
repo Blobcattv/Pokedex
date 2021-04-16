@@ -102,8 +102,8 @@ let pokemonRepository = (function () {
         modal.style.backgroundColor = calcColorByType(typeName);
 
         // Pokemon Name
-        let titleElement = document.querySelector('.modal-title');
-        titleElement.innerText = pokemon.name;
+        let modalTitle = document.querySelector('.modal-title');
+        modalTitle.innerText = pokemon.name;
 
         // Pokemon Image
         let modalBody = document.querySelector('.modal-body');
@@ -117,8 +117,6 @@ let pokemonRepository = (function () {
             typeElement.innerText = typeObj.type.name;
             modalBody.appendChild(typeElement);
         }
-
-        modalContainer.appendChild(modal);
     }
 
     function hideModal() {
