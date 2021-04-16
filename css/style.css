@@ -4,8 +4,7 @@ html, body {
 }
 
 h1 {
-    padding-top: 50px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .pkm-btn {
@@ -17,18 +16,20 @@ h1 {
     text-transform: capitalize;
     font-size: 14pt;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(58, 54, 114, 0.2);
     transition: all .2s ease-in-out;
 }
 
 .pkm-btn:hover {
-    opacity: 0.9;
+    opacity: .95;
+    transform: scale(1.05);
 }
 
 .pkm-btn img {
-    image-rendering: pixelated;
-    background-color: rgba(255, 255, 255, 0.226);
-    border-radius: 100pt;
+    background-image: url("../img/pokeball.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width: 130px;
 }
 
 .pkm-btn p {
@@ -39,9 +40,9 @@ h1 {
     background-color: rgba(255, 255, 255, 0.164);
 }
 
-
 .pkm-btn h3 {
-    margin: 15px 30px;
+    margin: 10px 10px 0px 30px;
+    font-weight: 900;
 }
 
 .pokemon-list {
@@ -61,4 +62,10 @@ h1 {
 
 .type-wrap {
     float: left;
+    padding-top: 25px;
+}
+
+.form-control {
+    border-radius: 40px;
+    padding: 15px 20px;
 }
