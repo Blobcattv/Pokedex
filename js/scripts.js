@@ -19,10 +19,12 @@ let pokemonRepository = (function () {
 
     function addListItem(pkm) {
         let mainList = document.querySelector('.pokemon-list');
-        let button = document.createElement('div');
+        let button = document.createElement('li');
         button.dataset.target = "#exampleModal";
         button.dataset.toggle = "modal"
+        button.classList.add('list-group-item');
         button.classList.add('pkm-btn');
+    
 
         let buttonTitle = document.createElement('h3');
         buttonTitle.innerText = pkm.name;

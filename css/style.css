@@ -1,6 +1,9 @@
 html, body {
     font-family: Roboto;
     background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h5 {
@@ -81,4 +84,30 @@ h5 {
 .modal-header {
     border-top-left-radius: 13pt;
     border-top-right-radius: 13pt;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-group-horizontal>.list-group-item:first-child {
+    border-bottom-left-radius: 14pt;
+    border-top-right-radius: 14pt;
+    border-top-left-radius: 14pt;
+}
+
+.list-group-horizontal>.list-group-item:last-child {
+    border-bottom-left-radius: 14pt;
+    border-top-right-radius: 14pt;
+    border-bottom-right-radius: 14pt;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #f5f2ff;
+}
+
+.sub-footer {
+    background-color: rgba(48, 28, 129, 0.2);
 }
