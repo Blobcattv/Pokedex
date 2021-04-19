@@ -2,7 +2,6 @@
 
 Pokédex App built with HTML, CSS, JavaScript and an external API.
 
-
 ## Key Features:
 
 Load data from an external source (PokéAPI). <br>
