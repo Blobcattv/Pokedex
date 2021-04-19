@@ -100,13 +100,16 @@ ul {
 
 footer {
   margin-top: 100px;
-  background-color: #f5f2ff;
+  background-color: #fbf9ff;
 }
 
 .sub-footer {
-  background-color: rgba(48, 28, 129, 0.2);
+  background-color: rgba(118, 109, 153, 0.082);
 }
 
+.content {
+    min-height: 55vh;
+}
 
 @media all and (max-width: 1000px) {
     .pkm-btn {
@@ -128,3 +131,7 @@ footer {
       padding: 25px 45px;
     }
   }
+
+  .contact {
+    width: 500px;
+}
