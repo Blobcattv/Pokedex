@@ -7,12 +7,25 @@ body {
   background-position: center;
 }
 
+h1 {
+  font-size: 50pt;
+  font-weight: 900;
+  color: rgb(50, 50, 73);
+}
+
+h2 {
+  font-size: 30pt;
+  font-weight: 900;
+  color: rgb(50, 50, 73);
+}
+
 h5 {
   color: white;
   font-weight: 900;
   text-transform: capitalize;
   font-size: 25pt;
   padding: 10px;
+  color: rgb(50, 50, 73);
 }
 
 .pkm-btn {
@@ -108,30 +121,34 @@ footer {
 }
 
 .content {
-    min-height: 55vh;
+  min-height: 55vh;
 }
 
 @media all and (max-width: 1000px) {
-    .pkm-btn {
-      width: 100%;
-    }
+  .pkm-btn {
+    width: 100%;
   }
-  
-  @media all and (max-width: 768px) {
-    form.form-inline.ml-auto {
-      margin: 0 auto;
-      margin-top: 30px;
-    }
-  
-    h1 {
-      text-align: center;
-    }
-  
-    .form-control {
-      padding: 25px 45px;
-    }
+}
+
+@media all and (max-width: 768px) {
+  form.form-inline.ml-auto {
+    margin: 0 auto;
+    margin-top: 30px;
   }
 
-  .contact {
-    width: 500px;
+  h1 {
+    text-align: center;
+  }
+
+  .form-control {
+    padding: 25px 45px;
+  }
+}
+
+.contact {
+  width: 500px;
+}
+
+.content-main {
+  height:  60vh;
 }
