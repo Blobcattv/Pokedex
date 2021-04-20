@@ -124,6 +124,7 @@ let pokemonRepository = (function () {
     // Pokemon Image
     let modalBody = document.querySelector(".modal-body");
     let imageElement = document.createElement("img");
+    imageElement.classList.add("detailPokemon");
     imageElement.src = pokemon.imageUrl;
     modalBody.appendChild(imageElement);
 
@@ -133,6 +134,7 @@ let pokemonRepository = (function () {
       typeElement.innerText = typeObj.type.name;
       modalBody.appendChild(typeElement);
     }
+
   }
 
   function hideModal() {

@@ -79,6 +79,7 @@ h5 {
 .img-wrap {
   float: right;
   padding: 0px 34px;
+  image-rendering: pixelated;
 }
 
 .type-wrap {
@@ -93,11 +94,15 @@ h5 {
 
 .modal-content {
   border-radius: 14pt;
+  border: none;
 }
 
 .modal-header {
   border-top-left-radius: 13pt;
   border-top-right-radius: 13pt;
+  height: 250px;
+  background-image: url('../img/pokeball.png');
+  background-repeat: no-repeat;
 }
 
 ul {
@@ -118,7 +123,7 @@ ul {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 25px;
   background-color: #fbf9ff;
 }
 
@@ -126,8 +131,17 @@ footer {
   background-color: rgba(118, 109, 153, 0.082);
 }
 
+.sub-footer span {
+  font-size: 11pt;
+  color: grey;
+}
+
 .content {
-  min-height: 55vh;
+  min-height: 60vh;
+}
+
+.content-main {
+  height: 69vh;
 }
 
 @media all and (max-width: 1000px) {
@@ -167,10 +181,6 @@ footer {
   width: 500px;
 }
 
-.content-main {
-  height: 60vh;
-}
-
 .error-message {
   margin-left: 10px;
   margin-top: 5px;
@@ -194,7 +204,8 @@ footer {
 .firstGen {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  padding-top: 20%;
 }
 
 .bulbasur {
@@ -216,4 +227,12 @@ footer {
 
 textarea.form-control {
   border-radius: 25px;
+}
+
+.detailPokemon {
+  position: absolute;
+  width: 300px;
+  left: 100px;
+  image-rendering: pixelated;
+  top: -220px;
 }
