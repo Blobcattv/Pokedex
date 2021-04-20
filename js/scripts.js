@@ -134,7 +134,6 @@ let pokemonRepository = (function () {
       typeElement.innerText = typeObj.type.name;
       modalBody.appendChild(typeElement);
     }
-
   }
 
   function hideModal() {
@@ -199,18 +198,15 @@ pokemonRepository
       header.innerText + " of " + pokemonList.length + " Pokémons ";
   });
 
-//Search
-let inputElement = document.querySelector("#Search");
-inputElement.addEventListener("input", function (val) {
-  console.log("inputVal: " + val);
+function filterPokemon() {
+  let inputElement = document.querySelector("#Search");
+
   let pokemonListElement = document.querySelector(".pokemon-list");
   for (let element of pokemonListElement.children) {
     let pokemonName = element.querySelector("h3").innerText;
-    console.log(pokemonName);
-    let searchValue = inputElement.innerText;
-    console.log("searchvalue: " + searchValue);
-    let match = pokemonName.includes(searchValue);
-    console.log(match);
+    let searchValue = inputElement.value.toLowerCase();
+    let match = pokemonName.toLowerCase().includes(searchValue);
+
 
     if (match) {
       element.style.display = "";
@@ -218,4 +214,4 @@ inputElement.addEventListener("input", function (val) {
       element.style.display = "none";
     }
   }
-});
+}
