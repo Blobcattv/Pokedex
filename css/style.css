@@ -245,3 +245,16 @@ textarea.form-control {
     left: -18%;
   }
 }
+
+@media all and (max-width: 360px) {
+  .pkm-btn {
+    width: 100%;
+  }
+  h1 {
+    font-size: 29pt;
+    margin-top: 49px;
+  }
+  .firstGen {
+    padding-top: 15%;
+  }
+}
