@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   font-family: Roboto;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
@@ -110,13 +109,13 @@ ul {
   padding-left: 0;
 }
 
-.list-group-horizontal > .list-group-item:first-child {
+.list-group-horizontal>.list-group-item:first-child {
   border-bottom-left-radius: 14pt;
   border-top-right-radius: 14pt;
   border-top-left-radius: 14pt;
 }
 
-.list-group-horizontal > .list-group-item:last-child {
+.list-group-horizontal>.list-group-item:last-child {
   border-bottom-left-radius: 14pt;
   border-top-right-radius: 14pt;
   border-bottom-right-radius: 14pt;
@@ -137,24 +136,22 @@ footer {
 }
 
 .content {
-  min-height: 65vh;
+  min-height: 76vh;
 }
 
 .content-main {
-  height: 69vh;
+  min-height: 76vh;
 }
 
 @media all and (max-width: 1000px) {
   .pkm-btn {
     width: 100%;
   }
-
   h1 {
     font-size: 30pt;
     font-weight: 900;
     color: rgb(50, 50, 73);
   }
-
   h2 {
     font-size: 20pt;
     font-weight: 900;
@@ -167,18 +164,29 @@ footer {
     margin: 0 auto;
     margin-top: 30px;
   }
-
   h1 {
     text-align: center;
+    font-size: 29pt;
+    margin-top: 50px;
   }
-
   .form-control {
     padding: 25px 45px;
   }
-}
-
-.contact {
-  width: 500px;
+  .firstGen {
+    width: 88%;
+  }
+  .bulbasur {
+    width: 200px;
+    left: 47%;
+  }
+  .charmander {
+    width: 200px;
+    left: 24%;
+  }
+  .squirtle {
+    width: 200px;
+    left: -18%;
+  }
 }
 
 .error-message {
