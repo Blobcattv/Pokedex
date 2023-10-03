@@ -3,7 +3,7 @@
 Pokédex App built with HTML, CSS, JavaScript and an external API.
 
 Live build: 
-App: https://blobcattv.github.io/Pokedex/index.html
+App: https://exeCatable.github.io/Pokedex/index.html
 
 ## Key Features:
 
